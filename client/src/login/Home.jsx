@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Route,  Link} from 'react-router-dom';
 import {
   Button,
   Container,
@@ -15,6 +16,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react';
+
 
 const getWidth = () => {
   const isSSR = typeof window === 'undefined';
@@ -66,9 +68,25 @@ class DesktopContainer extends Component {
   hideFixedMenu = () => this.setState({ fixed: true })
   showFixedMenu = () => this.setState({ fixed: false })
 
+  // state = { loading: false }
+
+  handleLoadingClick = () => {
+    this.setState({ loading: true })
+
+    setTimeout(() => {
+      this.setState({ loading: false })
+    }, 3000)
+  }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  
   render() {
+    
     const { children } = this.props
     const { fixed } = this.state
+    const { activeItem } = this.state
+
+    
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -98,9 +116,15 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item> */}
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
+                  <Router>
+                  <Button as={ Link }
+                    to='/Login'
+                    // onClick={() => this.props.history.push('/Login')}
+                    inverted={!fixed}
+                  >
                     Log in
                   </Button>
+                  </Router>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Sign Up
                   </Button>
