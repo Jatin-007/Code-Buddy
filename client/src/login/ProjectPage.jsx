@@ -143,7 +143,9 @@ const ProjectPageLayout = () => (
         </Table>
       </React.Fragment>
 
-
+      <Header as='h3'>
+      Announcements
+      </Header>
       <Comment.Group>
         <Comment>
       <List.Icon name='github' size='large' verticalAlign='middle' />
@@ -161,6 +163,7 @@ const ProjectPageLayout = () => (
             </Comment.Text>
           </Comment.Content>
         </Comment>
+
       </Comment.Group>
 
 <br></br>
