@@ -14,7 +14,6 @@ import {
   Segment,
   Sidebar,
   Visibility,
-  Table,
 } from 'semantic-ui-react';
 
 const getWidth = () => {
@@ -23,13 +22,13 @@ const getWidth = () => {
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
 }
 
-const AccountPageHeading = ({ mobile }) => (
+const ProjectPageHeading = ({ mobile }) => (
   <Container text>
 
   </Container>
 )
 
-AccountPageHeading.propTypes = {
+ProjectPageHeading.propTypes = {
   mobile: PropTypes.bool,
 }
 
@@ -53,7 +52,6 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-
             vertical
           >
             <Menu
@@ -66,13 +64,17 @@ class DesktopContainer extends Component {
               <Container>
                 {}
                 <Menu.Item position='right'>
-                  <Button  as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button as='a' inverted={!fixed}>
+                    Account
+                  </Button>
+                  <br></br>
+                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Logout
                   </Button>
                 </Menu.Item>
               </Container>
             </Menu>
-            <AccountPageHeading />
+            <ProjectPageHeading />
           </Segment>
         </Visibility>
 
@@ -97,73 +99,43 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 }
 
-const AccountPageLayout = () => (
+const ProjectPageLayout = () => (
   <ResponsiveContainer>
-  <Header as ='h1'> Mark's Account </Header>
-  <br></br>
-
-    <Table definition>
-      <Table.Body>
-        <Table.Row>
-          <Table.Cell width={2}> Proficient Languages </Table.Cell>
-          <Table.Cell>Java, C++, PHP </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Type of Member</Table.Cell>
-          <Table.Cell>Programmer </Table.Cell>
-        </Table.Row>
-      </Table.Body>
-    </Table>
-
     <br></br>
       <Header as='h3'>
-        Your Projects
+        Placeholder Project Name
       </Header>
-
+      <br></br>
 <List divided verticalAlign='middle'>
       <List.Item>
         <List.Content floated='right'>
-          <Button>View Member Applications</Button>
-          <Button>View Project Page</Button>
+          <Button>Accept</Button>
+          <Button>Reject</Button>
         </List.Content>
         <List.Content>
-          Project STRIDE is written in JAVA and is LOOKING FOR MEMBERS
+          LISA is proficient in JAVA, PYTHON and is a PROGRAMMER
         </List.Content>
       </List.Item>
       <List.Item>
         <List.Content floated='right'>
-          <Button>View Project Page </Button>
+          <Button>Accept</Button>
+          <Button>Reject</Button>
         </List.Content>
         <List.Content>
-          Project EVDAR is written in PHP, JAVASCRIPT and is COMPLETED
+          ERIC is proficient in JAVA and is a PROGRAMMER
         </List.Content>
       </List.Item>
       <List.Item>
         <List.Content floated='right'>
-          <Button>View Project Page </Button>
+          <Button>Accept</Button>
+          <Button>Reject</Button>
         </List.Content>
         <List.Content>
-          Project ECHO is written in C++ and is UNDERWAY
+          HARLEY is proficient in NONE and is a VISUAL DESIGNER
         </List.Content>
       </List.Item>
     </List>
-    <Header as='h3'>
-      Projects You've Joined
-    </Header>
-
-    <List divided verticalAlign='middle'>
-          <List.Item>
-            <List.Content floated='right'>
-              <Button>View Project Page</Button>
-              <Button>Leave Project</Button>
-            </List.Content>
-            <List.Content>
-              Project TRU is written in PHP and is UNDERWAY
-            </List.Content>
-          </List.Item>
-        </List>
-
   </ResponsiveContainer>
 )
 
-export default AccountPageLayout;
+export default ProjectPageLayout;

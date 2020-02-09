@@ -4,12 +4,14 @@ import { hot } from 'react-hot-loader';
 
 import Login from './login/Login';
 import HomepageLayout from './login/Home';
-import ProjectPage from './login/ProjectPage'
-import AccountPage from './login/AccountPage'
+import ProjectPage from './login/ProjectPage';
+import AccountPage from './login/AccountPage';
+import MemberApplicationPage from './login/MemberApplicationPage';
 
 class App extends Component {
   render() {
-      return <AccountPage/>;
+      return <MemberApplicationPage/>
+      // return <AccountPage/>;
       // return <HomepageLayout />;
   }
 }
