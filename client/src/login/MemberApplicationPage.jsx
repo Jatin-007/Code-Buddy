@@ -109,29 +109,46 @@ const ProjectPageLayout = () => (
 <List divided verticalAlign='middle'>
       <List.Item>
         <List.Content floated='right'>
-          <Button>Accept</Button>
-          <Button>Reject</Button>
+          <br></br>
+          <Button positive>Accept</Button>
+          <Button negative>Reject</Button>
         </List.Content>
         <List.Content>
           LISA is proficient in JAVA, PYTHON and is a PROGRAMMER
+          <br></br>
+          <br></br>
+          <Button >Chat with LISA</Button>
+          <br></br>
         </List.Content>
       </List.Item>
       <List.Item>
         <List.Content floated='right'>
-          <Button>Accept</Button>
-          <Button>Reject</Button>
+          <br></br>
+          <Button positive>Accept</Button>
+          <Button negative>Reject</Button>
         </List.Content>
         <List.Content>
+          <br></br>
           ERIC is proficient in JAVA and is a PROGRAMMER
+          <br></br>
+          <br></br>
+          <Button >Chat with ERIC</Button>
+          <br></br>
         </List.Content>
       </List.Item>
       <List.Item>
         <List.Content floated='right'>
-          <Button>Accept</Button>
-          <Button>Reject</Button>
+          <br></br>
+          <Button positive>Accept</Button>
+          <Button negative>Reject</Button>
         </List.Content>
         <List.Content>
+          <br></br>
           HARLEY is proficient in NONE and is a VISUAL DESIGNER
+          <br></br>
+          <br></br>
+          <Button >Chat with HARLEY</Button>
+          <br></br>
         </List.Content>
       </List.Item>
     </List>
