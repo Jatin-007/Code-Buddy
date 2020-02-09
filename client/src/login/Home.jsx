@@ -47,8 +47,11 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Button primary size='massive'>
       Create a New Project
-      <Icon name='right arrow' />
     </Button>
+  <br></br>
+  <br></br>
+  <p> Or </p>
+
     <Button secondary size='huge'>
       Explore and Join Other Projects
       <Icon name='right arrow' />
@@ -187,42 +190,27 @@ const HomepageLayout = () => (
       </Grid>
     </Segment> */}
 
-    {/* <Segment style={{ padding: '8em 0em' }} vertical>
+    { <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
+        Building Connections and Your Portfolio
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
+          Create projects with your peers, foster connections and develop a deeper understanding
+          of your chosen programming language or learn new ones. The possibilities are endless.
         </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='#'>Case Studies</a>
-        </Divider>
 
         <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
+          Code Buddy - An Exemplary Way Of Community Based Learning
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
+          Working with peers who have similar experiences and learning from one another is what
+            Code Buddy is all about - it is a community based learning tool that relies on
+            students to help one another and develop professional quality works.
         </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
+
       </Container>
-    </Segment> */}
+    </Segment> }
 
     {/* <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>

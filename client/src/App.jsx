@@ -7,7 +7,8 @@ import HomepageLayout from './login/Home';
 
 class App extends Component {
   render() {
-    return <HomepageLayout />;
+    return <ProjectPage/>;
+    // return <HomepageLayout />;
   }
 }
 // hot export works with RHL. Remove line 11 when starting fullstack integration
