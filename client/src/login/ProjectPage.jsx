@@ -69,7 +69,7 @@ class DesktopContainer extends Component {
               <Container>
                 {}
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
+                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Logout
                   </Button>
                 </Menu.Item>
@@ -180,9 +180,8 @@ const ProjectPageLayout = () => (
       <Header as='h3'>
         List of Collaborators
       </Header>
+
   <List divided verticalAlign='middle'>
-
-
     <List.Item>
       <List.Content floated='right'>
         <Button>Message</Button>

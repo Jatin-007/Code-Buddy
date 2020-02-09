@@ -5,10 +5,11 @@ import { hot } from 'react-hot-loader';
 import Login from './login/Login';
 import HomepageLayout from './login/Home';
 import ProjectPage from './login/ProjectPage'
+import AccountPage from './login/AccountPage'
 
 class App extends Component {
   render() {
-      return <ProjectPage/>;
+      return <AccountPage/>;
       // return <HomepageLayout />;
   }
 }
