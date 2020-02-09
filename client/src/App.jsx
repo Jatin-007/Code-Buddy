@@ -4,9 +4,11 @@ import { hot } from 'react-hot-loader';
 
 import Login from './login/Login';
 
+import LoginForm from './login/LoginLayout'
+
 class App extends Component {
   render() {
-    return <Login/>;
+    return <LoginForm/>;
   }
 }
 // hot export works with RHL. Remove line 11 when starting fullstack integration
