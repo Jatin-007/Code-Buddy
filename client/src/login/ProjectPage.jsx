@@ -16,6 +16,8 @@ import {
   Visibility,
   Table,
   Comment,
+  Form,
+  TextArea,
 } from 'semantic-ui-react';
 
 const getWidth = () => {
@@ -142,7 +144,7 @@ const ProjectPageLayout = () => (
           </Table.Body>
         </Table>
       </React.Fragment>
-
+{/*
       <Header as='h3'>
       Announcements
       </Header>
@@ -163,14 +165,23 @@ const ProjectPageLayout = () => (
             </Comment.Text>
           </Comment.Content>
         </Comment>
+      <Form>  <Form.Field
+          id='form-textarea-control-opinion'
+          control={TextArea}
+          label='Post Announcement'
+          placeholder='Announcement'
+        /></Form>
 
       </Comment.Group>
+      */}
 
 <br></br>
+
+      <Header as='h3'>
+        List of Collaborators
+      </Header>
   <List divided verticalAlign='middle'>
-    <List.Item>
-      <List.Content>List of Collaborators</List.Content>
-    </List.Item>
+
 
     <List.Item>
       <List.Content floated='right'>
